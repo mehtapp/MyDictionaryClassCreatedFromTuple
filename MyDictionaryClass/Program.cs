@@ -5,7 +5,7 @@ Console.WriteLine("Başlangıç count : " + myDictionary.Count);
 myDictionary.Add(1, "Mehtap");
 myDictionary.Add(1000, "Kemal");
 Console.WriteLine("Değer eklendi : " +myDictionary.Count);
-Console.WriteLine("GÜncel Veriler");
+Console.WriteLine("Güncel Veriler");
 foreach (var dictionary in myDictionary.GetDictionary())
 {
     Console.WriteLine(dictionary.Item1 + " " + dictionary.Item2);
@@ -19,7 +19,7 @@ foreach (var dictionary in myDictionary.GetDictionary())
 }
 
 
-public class MyDictionary<K, V>  // K key için kullanılacak generic type'ı , K key için kullanılacak generic type'ı temsil eder.
+public class MyDictionary<K, V>  // K key için kullanılacak generic type'ı , V value için kullanılacak generic type'ı temsil eder.
 {
     Tuple<K, V>[] _dictionary;
     Tuple<K, V>[] _tempDictionary;
